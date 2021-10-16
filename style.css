@@ -41,6 +41,7 @@ body {
     color: hsl(0, 0%, 95%);
     font-size: 40px;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 .car p {
