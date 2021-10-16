@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    margin: 0 24px;
+    width: 62.5%;
+    height: 65.2%;
+}
+
+.car {
+    font-family: 'Courier Prime', monospace;
+    color: hsl(0, 0%, 95%);
+    font-size: 15px;
+    height: 100%;
+    flex-basis: 33.33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+}
+
+.car h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.car p {
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsl(0, 0%, 95%);
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.car button {
+    background-color: hsl(0, 0%, 95%);
+    border: 3px solid hsla(0, 0%, 100%, 0.75);
+    border-radius: 25px;
+    width: 150px;
+    height: 50px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.car button:hover {
+    background-color: transparent;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+
+.sedans button {
+    color: hsl(31, 77%, 52%);
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.suvs button {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+
+.luxury button {
+    color: hsl(179, 100%, 13%);
+}
+
+@media all and (max-width: 1300px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media all and (max-width: 992px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media all and (max-width: 835px) {
+    body {}
+    .container {
+        width: 60%;
+    }
+    .car {
+        flex-basis: 100%;
+    }
+    .car img,
+    h2,
+    p {
+        margin-bottom: 40px;
+    }
+    .sedans {
+        border-radius: 10px 10px 0 0;
+    }
+    .luxury {
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 5% 0 5% 0;
+        margin: 24px;
+    }
+}
